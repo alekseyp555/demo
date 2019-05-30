@@ -9,21 +9,13 @@ public class NavigationHelper extends  HelperBase{
     super(wd);
   }
 
-  public void GroupPage() {
+  public void RegisterPage() {
     if (isElementPresent(By.tagName("h1"))
-            && wd.findElement(By.tagName("h1")).getText().equals("Groups")
-            && isElementPresent(By.name("new"))) {
+            && wd.findElement(By.cssSelector(".maintitle")).getText().equals("Готовы зарегистрироваться?")
+            && isElementPresent(By.id("display_name"))) {
       return;
     }
-    click(By.linkText("groups"));
+    click(By.cssSelector("#register_link"));
   }
-  public void ContactPage() {
-    click(By.linkText("add new"));
-  }
-  public void HomePage() {
-    if (isElementPresent(By.id("maintable"))) {
-      return;
-    }
-    click(By.linkText("home"));
-  }
+
 }

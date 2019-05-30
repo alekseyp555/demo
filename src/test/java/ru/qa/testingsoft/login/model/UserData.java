@@ -1,17 +1,10 @@
 package ru.qa.testingsoft.login.model;
 
 public class UserData {
-  private final String username;
-  private final String email;
-  private final String password;
-  private final String description;
-
-  public UserData(String username, String email, String password, String description) {
-    this.username = username;
-    this.email = email;
-    this.password = password;
-    this.description = description;
-  }
+  private  String username;
+  private  String email;
+  private  String password;
+  private  String description;
 
   public String getUsername() {
     return username;
@@ -28,4 +21,25 @@ public class UserData {
   public String getDescription() {
     return description;
   }
+
+  public UserData withUsername(String username) {
+    this.username = username;
+    return this;
+  }
+
+  public UserData withEmail(String email) {
+    this.email = email;
+    return this;
+  }
+
+  public UserData withPassword(String password) {
+    this.password = password;
+    return this;
+  }
+
+  public UserData withDescription(String description) {
+    this.description = description;
+    return this;
+  }
+
 }

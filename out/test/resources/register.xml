@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Suite1" verbose="1" >
+<suite name="RegistrationPage" verbose="1" >
     <test name="Registration Test">
         <classes>
             <class name="ru.qa.testingsoft.login.tests.UserRegistrationTests"/>
