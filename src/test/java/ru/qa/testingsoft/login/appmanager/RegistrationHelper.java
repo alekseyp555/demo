@@ -39,6 +39,16 @@ public class RegistrationHelper extends HelperBase {
             && wd.findElement(By.cssSelector("#display_name_msg")).getText().equals("Имя может содержать только следующие символы: a-z0-9_"));
   }
 
+  public void checkShortNamePopupError() {
+    assertTrue(isElementPresent(By.id("display_name_msg"))
+            && wd.findElement(By.cssSelector("#display_name_msg")).getText().equals("✗ Введенное имя слишком короткое"));
+  }
+
+  public void checkShortEmailPopupError() {
+    assertTrue (isElementPresent(By.id("email_1_msg"))
+            && wd.findElement(By.cssSelector("#email_1_msg")).getText().equals("✗ E-mail адрес неправильный"));
+  }
+
   public void checkEmailPopupError() {
     assertTrue (isElementPresent(By.id("email_1_msg"))
             && wd.findElement(By.cssSelector("#email_1_msg")).getText().equals("✗ E-mail адрес неправильный"));

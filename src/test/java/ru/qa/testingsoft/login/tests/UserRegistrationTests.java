@@ -37,8 +37,8 @@ public class UserRegistrationTests extends TestBase {
                     .withEmail("vasyaatgmail.com.com")
                     .withPassword("va")
                     .withDescription("for the best testing purposes"));
-    app.register().checkNamePopupError();
-    app.register().checkEmailPopupError();
+    app.register().checkShortNamePopupError();
+    app.register().checkShortNamePopupError();
   }
 
   @Test
@@ -50,7 +50,6 @@ public class UserRegistrationTests extends TestBase {
                     .withPassword("васяпароль")
                     .withDescription("это тестовая регистрация, пожалуйста разрешите эту регистрацию"));
     app.register().checkNamePopupError();
-    app.register().checkEmailPopupError();
   }
 
   @Test
@@ -62,6 +61,5 @@ public class UserRegistrationTests extends TestBase {
                     .withPassword("!#(%*^__$*^+*$&%^")
                     .withDescription("это тестовая регистрация, пожалуйста разрешите эту регистрацию !(№%(№%%:::"));
     app.register().checkNamePopupError();
-    app.register().checkEmailPopupError();
   }
 }

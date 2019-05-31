@@ -1,0 +1,2 @@
+10:06:50.068 [main] INFO  r.q.testingsoft.login.tests.TestBase - Start test testBadUserRegistration
+10:06:52.922 [main] INFO  r.q.testingsoft.login.tests.TestBase - Stop test testBadUserRegistration

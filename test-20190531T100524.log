@@ -1,0 +1,10 @@
+10:05:39.088 [main] INFO  r.q.testingsoft.login.tests.TestBase - Start test testBadUserRegistration
+10:05:41.912 [main] INFO  r.q.testingsoft.login.tests.TestBase - Stop test testBadUserRegistration
+10:05:41.912 [main] INFO  r.q.testingsoft.login.tests.TestBase - Start test testBadUserRegistrationRu
+10:05:44.564 [main] INFO  r.q.testingsoft.login.tests.TestBase - Stop test testBadUserRegistrationRu
+10:05:44.564 [main] INFO  r.q.testingsoft.login.tests.TestBase - Start test testBadUserRegistrationSpecCharacters
+10:05:47.184 [main] INFO  r.q.testingsoft.login.tests.TestBase - Stop test testBadUserRegistrationSpecCharacters
+10:05:47.200 [main] INFO  r.q.testingsoft.login.tests.TestBase - Start test testUserRegistrationBoundary
+10:05:50.024 [main] INFO  r.q.testingsoft.login.tests.TestBase - Stop test testUserRegistrationBoundary
+10:05:50.024 [main] INFO  r.q.testingsoft.login.tests.TestBase - Start test testUserRegistrationEng
+10:05:52.488 [main] INFO  r.q.testingsoft.login.tests.TestBase - Stop test testUserRegistrationEng
